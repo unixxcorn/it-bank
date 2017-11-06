@@ -89,10 +89,7 @@
                                 </div>
                                 @else
                                     <div class="panel panel-default">
-                                        <div class="panel-heading">Dashboard</div>
-                                        <div class="panel-body">
                                             @yield('user')
-                                        </div>
                                     </div>
                                     @if ( $class >= 1 )
                                         <div class="panel panel-default">

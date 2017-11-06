@@ -13,7 +13,14 @@ class ItBankPayment extends Migration
      */
     public function up()
     {
-        Schema::create('itb_user_payment', function (Blueprint $table) {
+        Schema::create('itb_income', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('uid');
+            $table->integer('eid');
+            $table->float('money');
+            $table->timestamps();
+        });
+        Schema::create('itb_expend', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('uid');
             $table->integer('eid');
@@ -29,6 +36,7 @@ class ItBankPayment extends Migration
      */
     public function down()
     {
-        Schema::drop('itb_event');
+        Schema::drop('itb_income');
+        Schema::drop('itb_expend');
     }
 }

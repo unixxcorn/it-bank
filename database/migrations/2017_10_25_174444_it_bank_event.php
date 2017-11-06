@@ -21,6 +21,13 @@ class ItBankEvent extends Migration
             $table->timestamp('deadline');
             $table->timestamps();
         });
+        Schema::create('itb_statement', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('statement');
+            $table->float('money');
+            $table->boolean('inout');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -31,5 +38,6 @@ class ItBankEvent extends Migration
     public function down()
     {
         Schema::drop('itb_event');
+        Schema::drop('itb_statement');
     }
 }
