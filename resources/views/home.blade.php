@@ -15,6 +15,13 @@
         @endcomponent
     </div>
 </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Event</div>
+    <div class="panel-body">
+        @component('user.event')
+        @endcomponent
+    </div>
+</div>
 @endsection
 
 @section('accountant')

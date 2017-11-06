@@ -1,5 +1,5 @@
 <div>
-<div class="row" id="statement">
+<div class="row" id="moneypool">
     @php
         $income = App\StatementIncome::all()->sum('money');
         $expend = App\StatementExpend::all()->sum('money');
