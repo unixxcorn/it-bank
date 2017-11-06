@@ -88,9 +88,7 @@
                                     </div>
                                 </div>
                                 @else
-                                    <div class="panel panel-default">
-                                            @yield('user')
-                                    </div>
+                                    @yield('user')
                                     @if ( $class >= 1 )
                                         <div class="panel panel-default">
                                             <div class="panel-heading">Accountant Panal</div>
