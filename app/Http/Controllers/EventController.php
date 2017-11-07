@@ -10,6 +10,6 @@ class EventController extends Controller
 {
     public function page(){
         $dataset = Events::find(1);
-        return view('event.view')->with('dataset', $dataset);
+        return view('event')->with('dataset', $dataset);
     }
 }

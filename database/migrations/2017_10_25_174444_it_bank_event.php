@@ -19,7 +19,7 @@ class ItBankEvent extends Migration
             $table->longText('description');
             $table->float('money');
             $table->timestamp('deadline');
-            $table->boolean('inout');
+            $table->boolean('is_expend');
             $table->timestamps();
         });
     }

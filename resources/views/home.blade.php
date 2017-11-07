@@ -25,9 +25,9 @@
 @endsection
 
 @section('accountant')
-    @component('account.pay')
+    @component('accountant.pay')
     @endcomponent
-    @component('event.manage')
+    @component('accountant.event')
     @endcomponent
 @endsection
 @section('admin')

@@ -11,6 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <style>
+        #statement .in {color: green !important; }
+        #statement .out {color: red !important;}
+    </style>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
