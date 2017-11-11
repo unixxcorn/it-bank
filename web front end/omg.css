@@ -1,0 +1,145 @@
+body {
+    background: url(img/it.jpg);
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+#target1 {
+    max-width: 150px;
+}
+#box1 {
+    background: #969696;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 3;
+    border:5px solid black;
+}
+#box2{
+    background: #969696;
+    width: 900px;
+    height: 200px;
+    margin-top: 100px;
+    font-family: "Baloo";
+    overflow: hidden;
+    border:5px solid black;
+}
+#box2 p {
+    font-size: 25px;
+}
+#box3 {
+    background: #969696;
+    margin-top: 25px;
+    width: 900px;
+    height: 200px;
+    font-family: "Baloo";
+    overflow: hidden;
+    border:5px solid black;
+}
+#box3 p {
+    font-size: 25px;
+}
+#box1 #tab-top p {
+    color: #000000;
+}
+#box2 #tab-top2 {
+    font-size: 40px;
+}
+#box3 #tab-top3 {
+    font-size: 40px;
+}
+#box4 #tab-top4 {
+    font-size: 40px;
+}
+#box1 #tab-top a {
+    color: #000000;
+}
+.student #dump1 {
+    height: 35px;
+    background: #000000;
+    margin-top: 20px;
+}
+.student #dump1 p {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Baloo";
+}
+.student #dump2 {
+    background: #696969;
+}
+.student #dump2 img {
+    margin-top: 50px;
+}
+#big1 {
+
+    position: relative;
+}
+#big1 .student #dump2 #body1 #body11 p {
+    font-size: 20px;
+}
+#big1 #dump2 {
+    border:5px solid black;
+}
+#big2 {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 150px;
+    background: #969696;
+}
+#big2 p {
+    font-size: 25px;
+    font-family: "Baloo";
+    margin-left: 100px;
+}
+#big2 #text {
+    margin-top: 50px;
+}
+.student2 #dump3 p {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Baloo";
+}
+.student2 #dump3 {
+    height: 35px;
+    background: #000000;
+    margin-top: 20px;
+}
+.student2 #dump3 p {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Baloo";
+
+}
+#dump4 {
+    background: #696969;
+    height: 30%;
+    border:5px solid black;
+}
+#dump5 {
+    overflow: hidden;
+    height: 300px;
+    border:5px solid black;
+}
+.student2 #city p {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Baloo";
+}
+.student2 #city {
+    height: 35px;
+    background: #000000;
+    margin-top: 20px;
+    border:5px solid black;
+}
+.student2 #dump6 {
+    border:5px solid black;
+}
+.student2 #dump6 a {
+    color: #000000;
+    font-family: "Baloo";
+}
+.student2 #dump6 button {
+    background: #696969;
+}
