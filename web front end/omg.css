@@ -1,41 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Trirong:300');
+html{
+    font-family: 'Trirong', serif;
+}
 body {
-    background: url(img/it.jpg);
-    background-repeat:repeat;
-    background-attachment: fixed;
-    background-position: center;
-    overflow-x: hidden;
+    background-color: rgba(227, 235, 247, 1);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kanit', sans-serif;
 }
 #target1 {
     max-width: 150px;
 }
-#box1 {
-    background: #969696;
-    width: 100%;
+.navbar {
+    font-family: 'Kanit', sans-serif;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
     height: 8%;
     position: fixed;
-    z-index: 3;
-    border:5px solid black;
+    z-index: 10;
 }
-#box2{
-    background: #969696;
-    width: 900px;
-    height: 200px;
+#card{
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5  );
+}
+#event {
+    margin-top: 50px;
+}
+#tab_bottom {
     margin-top: 100px;
+    height: 200px;
+}
+#tab_top {
+    margin-top: 100px;
+}
+#dump1 {
+    height: 35px;
+    background: linear-gradient(to bottom, rgba(0, 113, 255, .8), rgba(0, 113, 255, .5));
+}
+#dump1 p {
+    font-size: 25px;
+    color: #000000;
     font-family: "Baloo";
-    overflow: hidden;
-    border:5px solid black;
 }
 #box2 p {
     font-size: 25px;
 }
 #box3 {
-    background: #969696;
-    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
+    margin-top: 30px;
+    padding: 0px;
     width: 900px;
-    height: 200px;
-    font-family: "Baloo";
-    overflow: hidden;
-    border:5px solid black;
+    height: 170px;
+}
+#box2 {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
+    margin-top: 15px;
+    padding: 0px;
+    width: 900px;
+    height: 170px;
 }
 #box3 p {
     font-size: 25px;
@@ -57,13 +81,12 @@ body {
 }
 .student #dump1 {
     height: 35px;
-    background: #000000;
+    background: linear-gradient(to bottom, rgba(0, 113, 255, .8), rgba(0, 113, 255, .5));
     margin-top: 20px;
 }
 .student #dump1 p {
     font-size: 25px;
-    color: #ffffff;
-    font-family: "Baloo";
+    color: #000000;
 }
 .student #dump2 {
     background: #696969;
@@ -78,19 +101,14 @@ body {
 #big1 .student #dump2 #body1 #body11 p {
     font-size: 20px;
 }
-#big1 #dump2 {
-    border:5px solid black;
-}
 #big2 {
     position: relative;
     width: 100%;
     height: 250px;
-    margin-top: 150px;
-    background: #969696;
+    background: #ffffff;
 }
 #big2 p {
     font-size: 25px;
-    font-family: "Baloo";
     margin-left: 100px;
 }
 #big2 #text {
@@ -99,7 +117,6 @@ body {
 .student2 #dump3 p {
     font-size: 25px;
     color: #ffffff;
-    font-family: "Baloo";
 }
 .student2 #dump3 {
     height: 35px;
@@ -109,8 +126,6 @@ body {
 .student2 #dump3 p {
     font-size: 25px;
     color: #ffffff;
-    font-family: "Baloo";
-
 }
 #dump4 {
     background: #696969;
@@ -125,7 +140,6 @@ body {
 .student2 #city p {
     font-size: 25px;
     color: #ffffff;
-    font-family: "Baloo";
 }
 .student2 #city {
     height: 35px;
@@ -138,8 +152,10 @@ body {
 }
 .student2 #dump6 a {
     color: #000000;
-    font-family: "Baloo";
 }
 .student2 #dump6 button {
     background: #696969;
+}
+#text1 {
+    margin-top:40px;
 }
