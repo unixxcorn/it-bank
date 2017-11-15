@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Trirong:300');
+html{
+    font-family: 'Trirong', serif;
+}
+body {
+    background-color: rgba(227, 235, 247, 1);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kanit', sans-serif;
+}
+#target1 {
+    max-width: 150px;
+}
+.navbar {
+    font-family: 'Kanit', sans-serif;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
+    height: 8%;
+    position: fixed;
+    z-index: 10;
+}
+#card{
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5  );
+}
+#event {
+    margin-top: 50px;
+}
+#tab_bottom {
+    margin-top: 100px;
+    height: 200px;
+}
+#tab_top {
+    margin-top: 100px;
+}
+#dump1 {
+    height: 35px;
+    background: linear-gradient(to bottom, rgba(0, 113, 255, .8), rgba(0, 113, 255, .5));
+}
+#dump1 p {
+    font-size: 25px;
+    color: #000000;
+    font-family: "Baloo";
+}
+#box2 p {
+    font-size: 25px;
+}
+#box3 {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
+    margin-top: 30px;
+    padding: 0px;
+    width: 900px;
+    height: 170px;
+}
+#box2 {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 3px rgba(0, 113, 255, 0.5);
+    margin-top: 15px;
+    padding: 0px;
+    width: 900px;
+    height: 170px;
+}
+#box3 p {
+    font-size: 25px;
+}
+#box1 #tab-top p {
+    color: #000000;
+}
+#box2 #tab-top2 {
+    font-size: 40px;
+}
+#box3 #tab-top3 {
+    font-size: 40px;
+}
+#box4 #tab-top4 {
+    font-size: 40px;
+}
+#box1 #tab-top a {
+    color: #000000;
+}
+.student #dump1 {
+    height: 35px;
+    background: linear-gradient(to bottom, rgba(0, 113, 255, .8), rgba(0, 113, 255, .5));
+    margin-top: 20px;
+}
+.student #dump1 p {
+    font-size: 25px;
+    color: #000000;
+}
+.student #dump2 {
+    background: #696969;
+}
+.student #dump2 img {
+    margin-top: 50px;
+}
+#big1 {
+
+    position: relative;
+}
+#big1 .student #dump2 #body1 #body11 p {
+    font-size: 20px;
+}
+#big2 {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #ffffff;
+}
+#big2 p {
+    font-size: 25px;
+    margin-left: 100px;
+}
+#big2 #text {
+    margin-top: 50px;
+}
+.student2 #dump3 p {
+    font-size: 25px;
+    color: #ffffff;
+}
+.student2 #dump3 {
+    height: 35px;
+    background: #000000;
+    margin-top: 20px;
+}
+.student2 #dump3 p {
+    font-size: 25px;
+    color: #ffffff;
+}
+#dump4 {
+    background: #696969;
+    height: 30%;
+    border:5px solid black;
+}
+#dump5 {
+    overflow: hidden;
+    height: 300px;
+    border:5px solid black;
+}
+.student2 #city p {
+    font-size: 25px;
+    color: #ffffff;
+}
+.student2 #city {
+    height: 35px;
+    background: #000000;
+    margin-top: 20px;
+    border:5px solid black;
+}
+.student2 #dump6 {
+    border:5px solid black;
+}
+.student2 #dump6 a {
+    color: #000000;
+}
+.student2 #dump6 button {
+    background: #696969;
+}
+#text1 {
+    margin-top:40px;
+}
+#topic {
+    border:2px solid black;
+    background: #FA8072;
+}
+#detail {
+    border:1px solid black;
+    background: #FFA07A;
+}
+.center {
+    margin: auto;
+    width: 50%;
+}
+.header {
+    font-size: 25px;
+    color: #ffffff;
+    background: #0082ff;
+    text-align: center;
+}
