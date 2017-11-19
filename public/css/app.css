@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);* {
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .container {
@@ -21,6 +23,16 @@
   color: #ffffff;
   -webkit-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark a {
+  color: #ffffff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.dark a:hover {
+  color: #b3b3b3;
 }
 
 .light {
@@ -50,26 +62,9 @@
           box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
-.round {
-  border-radius: 50%;
-}
-
 .rounded-circle {
   padding: 0;
   border-radius: 50%;
-}
-
-.navedit {
-  background-color: #f5f8fa;
-  color: #333333;
-}
-
-.navedit a {
-  color: #333333;
-}
-
-.navedit a:hover {
-  color: #000000;
 }
 
 .bg-light {
@@ -81,5 +76,27 @@
 
 .line-bottom {
   border-bottom: solid 10px #0275d8;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -2000;
+  width: 100vw;
+  filter: blur(3px) grayscale(0.3);
+  -webkit-filter: blur(3px) grayscale(0.3);
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #202020;
+}
+
+.success {
+  color: #2ab27b;
+}
+
+.danger {
+  color: #bf5329;
 }
 

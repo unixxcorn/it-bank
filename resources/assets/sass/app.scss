@@ -9,6 +9,7 @@
 *{
     overflow-x: hidden;
     overflow-y: auto;
+    transition: .3s;
 }
 .container{
     padding: 2em;
@@ -25,6 +26,13 @@
     background: $body-dark;
     color: $text-white;
     box-shadow:0 3px 5px 3px $body-shadow;
+}
+.dark a{
+    color: $text-white;
+    transition: color .3s;
+}
+.dark a:hover{
+    color: $text-low-white;
 }
 .light{
     background: $body-bg;
@@ -46,23 +54,11 @@
     border: solid 5px $body-dark;
     box-shadow:0 3px 5px 1px $body-shadow;
 }
-.round{
-    border-radius:50%; 
-}
 .rounded-circle {
     padding: 0;
     border-radius: 50%;
 }
-.navedit{
-    background-color: $body-bg;
-    color: $text-low-dark;
-}
-.navedit a {
-    color: $text-low-dark;
-}
-.navedit a:hover {
-    color: $text-dark;
-}
+
 .bg-light{
     background-color: $body-bg;
     border-bottom: solid 3px $color-primary;
@@ -70,4 +66,22 @@
 }
 .line-bottom{
     border-bottom: solid 10px $color-primary;
+}
+.bg-img{
+    position: absolute;
+    z-index: -2000;
+    width: 100vw;
+    filter: blur(3px) grayscale(0.3);
+    -webkit-filter: blur(3px) grayscale(0.3);
+    height: 100vh;
+}
+body{
+    min-height: 100vh;
+    background-color: $body-dark;
+}
+.success{
+    color: $brand-success;
+}
+.danger{
+    color: $brand-danger;
 }

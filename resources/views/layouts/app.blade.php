@@ -8,16 +8,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }} - {{ Auth::user()->name }}</title>
+    <title>{{ config('app.name', 'Laravel') }}@auth{{ Auth::user()->name }} - @endauth</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-light navedit">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMainData" aria-controls="navbarMainData" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body class="full-height">
+@yield('bg')
+    <nav class="navbar navbar-toggleable-md dark line-bottom">
+        <button class="navbar-toggler navbar-toggler-right material-icons btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarMainData" aria-controls="navbarMainData" aria-expanded="false" aria-label="Toggle navigation">
+            menu
         </button>
         <a class="navbar-brand ml-5" href="/" style="width:100px">{{ config('app.name', 'Laravel') }}</a>
 
@@ -27,11 +29,13 @@
                 <a class="nav-item nav-link" href="{{ route('home') }}">Dashboard</a>
             </div>
             <div class="navbar-nav mr-5 ml-auto">
-                <a class="nav-item nav-link active mr-5">Welcome! {{ Auth::user()->name }}</a>
-                <button type="button" class="btn btn-primary" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sign out</button>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                </form>
+                @auth
+                    <a class="nav-item nav-link active mr-5">Welcome! {{ Auth::user()->name }}</a>
+                    <button type="button" class="btn btn-primary" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sign out</button>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                @endauth
             </div>
         </div>
     </nav>
@@ -39,7 +43,7 @@
         <div class="row dark" id="tab_bottom">
             <div class="col-8 col-span-2 container" id="text1">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <table>
                             <tr><td><b>Accountant</b></td><td>Dumpkung</td></tr>
                             <tr><td><b>Telephone</b></td><td>Un1xxc0rn</td></tr>
@@ -47,7 +51,7 @@
                             <tr><td><b>Email</b></td><td>Phongsathorn Kittiworapanya</td></tr>
                         </table>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <table>
                             <tr><td><b>Front-End </b></td><td>Dumpkung</td></tr>
                             <tr><td><b>Back-End </b></td><td>Un1xxc0rn</td></tr>
