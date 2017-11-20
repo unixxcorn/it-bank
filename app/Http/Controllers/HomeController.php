@@ -25,8 +25,34 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
     public function login()
     {
         return redirect('/');
+    }
+
+    public function event($id)
+    {
+        return view('event')->with('eid', $id);
+    }
+
+    public function memberlist()
+    {
+        return view('form.user.table');
+    }
+
+    public function user($name)
+    {
+        return view('user')->with('name', $name);
+    }
+
+    public function store(Request $request)
+    {
+        $name = $request->input('name');
+    }
+
+    public function statement()
+    {
+        return view('form.user.statement');
     }
 }

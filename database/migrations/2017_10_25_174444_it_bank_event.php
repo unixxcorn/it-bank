@@ -16,9 +16,9 @@ class ItBankEvent extends Migration
         Schema::create('itb_event', function (Blueprint $table) {
             $table->increments('id');
             $table->string('event');
-            $table->longText('description');
+            $table->longText('description')->nullable($value = true);
             $table->float('money');
-            $table->timestamp('deadline');
+            $table->date('deadline');
             $table->boolean('is_expend');
             $table->timestamps();
         });

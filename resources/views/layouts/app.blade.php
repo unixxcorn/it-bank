@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}@auth{{ Auth::user()->name }} - @endauth</title>
+    <title>{{ config('app.name', 'Laravel') }} @auth - {{ Auth::user()->name }}@endauth</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -22,7 +22,6 @@
             menu
         </button>
         <a class="navbar-brand ml-5" href="/" style="width:100px">{{ config('app.name', 'Laravel') }}</a>
-
         <div class="collapse navbar-collapse" id="navbarMainData">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/">Home </a>

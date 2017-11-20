@@ -16,9 +16,8 @@ class ItBankPayment extends Migration
         Schema::create('itb_statement', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('uid');
-            $table->integer('eid');
             $table->float('money');
-            $table->boolean('is_expend');
+            $table->boolean('is_expend')->default(0);
             $table->timestamps();
         });
     }
