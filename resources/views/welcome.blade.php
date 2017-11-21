@@ -93,24 +93,25 @@
             <div class="row justify-content-center align-self-center full-height dark" id="description">
                 <div class="col-md-5 col-xs-12 container justify-content-center align-self-center">
                     <div class='title'>
-                        Why we diffent?
+                        What is ITB?
                     </div>
                 </div>
                 <div class="col-md-5 col-xs-12 container justify-content-center align-self-center">
                     <div class='subtitle'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id dignissim dolor. Maecenas eu vehicula magna. Donec et est sit amet ante posuere lacinia. Fusce lobortis ultricies nulla, vitae suscipit ligula euismod eu. Nunc pharetra nulla quis ex vehicula vestibulum. Quisque ultricies orci non vulputate sagittis. Pellentesque vitae velit leo. Maecenas eu dolor et augue aliquam suscipit pellentesque non libero. Proin ornare laoreet urna, vitae sollicitudin justo euismod eget. Vestibulum mollis scelerisque ligula vel ullamcorper. Mauris vitae erat suscipit, sodales ipsum eget, lacinia libero. Duis a rhoncus purus, ut congue dui. Fusce at dapibus dui. Quisque maximus est et odio mollis rutrum. Nulla scelerisque aliquet convallis. Nullam feugiat, quam id dapibus lobortis, nisi risus elementum nunc, quis tincidunt libero enim id sapien.
+                        "IT Bank" is a website that present financial information and history for facilitate to member in Information Technology of king mongkut's university.This website display list of member in IT faculty and arrearage of each person.
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center align-self-center full-height light" id="github">
                 <div class="col-md-5 col-xs-12 container justify-content-center align-self-center">
                     <div class='title'>
-                        Clone Me!<br/> I'm on git.
+                        Join Us<br/>
                     </div>
                 </div>
                 <div class="col-md-5 col-xs-12 container justify-content-center align-self-center">
                     <div class='subtitle'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id dignissim dolor. Maecenas eu vehicula magna.
+                        For your convenience to check financial information and history and check your payment list.This website will show you an upcoming event for
+                        cost of work.Use it for keep up with financial news.
                     </div>
                     <a href="https://github.com/unixxcorn/it-bank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">See us on github</a>
                 </div>
@@ -123,9 +124,10 @@
                 </div>
                 <div class="col-md-5 col-xs-12 container justify-content-center align-self-center">
                     <div class='subtitle'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id dignissim dolor. Maecenas eu vehicula magna.
+                        <tr>
+                           Please registor and login into main page.You can check your payout history and make sure you have paid for all of your faculty activities.You can check the financial news of the faculty every time by website.
+                        </tr>
                     </div>
-                    <a href="https://github.com/unixxcorn/it-bank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">See us on github</a>
                 </div>
             </div>
             <div class="row justify-content-center align-self-center full-height light" id="howto">
