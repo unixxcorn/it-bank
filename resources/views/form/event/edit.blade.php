@@ -25,10 +25,6 @@
                         <select class="form-control" name="is_expend" >
                             @if($events['is_expend']==0)
                                 <option selected value="0">Deposit</option>
-                                <option value="1">Withdraw</option>
-                            @else
-                                <option value="0">Deposit</option>
-                                <option selected value="1">Withdraw</option>
                             @endif
                             
                         </select>

@@ -51,7 +51,6 @@
                     <div class="col-sm-7" align="left">
                         <select class="form-control" name="is_expend" placeholder="">
                             <option value="0">Deposit</option>
-                            <option value="1">Withdraw</option>
                         </select>
                     </div>
 

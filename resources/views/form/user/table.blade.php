@@ -4,6 +4,7 @@
 @endsection
 @section('content')
     @php
+	use App\Events;
         use App\User;
         use App\Statement;
         $user = json_decode(json_encode(DB::table("users")
@@ -23,7 +24,7 @@
                         <td align="left">ID</td>
                         <td align="left">Name</td>
                         <td align="left">Email</td>
-                        <td align="right">Paid</td>
+                        <td align="right">Balance</td>
                         <td align="right">&nbsp</td>
                     </tr>
                     @foreach($user as $value)
@@ -33,11 +34,16 @@
                             <td align="left">{{ $value['email'] }}</td>
                             <td align="right">
                                 @php
-                                    if($value['paid'] != 0){
-                                        echo $value['paid'];
-                                    }else{
-                                        echo 0;
-                                    }
+                                    $debts = Events::Where('is_expend', 0)->sum('Money');
+				    $member = User::count();
+				    $paid = $value['paid'];
+				    $balance = round($paid - ($debts / $member),0,PHP_ROUND_HALF_UP);
+				    if ($balance > 0) {
+					echo '+'.$balance;
+				    }
+				    else {
+					echo $balance;
+				    }
                                 @endphp
                             </td>
                             <td align="right"><a class="btn btn-primary" href="/user/{{ $value['name'] }}">see more</a></td>

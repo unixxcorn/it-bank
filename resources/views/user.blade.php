@@ -23,7 +23,7 @@
         </div>
         <div class="row col-lg-5 col-md-8 col-sm-8 col-xs-12 container card ml-auto line-bottom">
             <div class='subtitle col-md-12'>
-                Payment for " {{$users['name']}} "
+                Payments
             </div>
             <form class="row justify-content-center align-self-center col-md-12" method="POST" action="/user/pay">
                 <div class="col-3">User ID</div>
